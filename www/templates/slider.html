@@ -1,0 +1,20 @@
+<style>
+.slider {
+ height:100%;
+text-align:center;
+}
+  .scroll {
+    height: 100%;
+  }
+
+
+</style>
+<ion-view title="slider" >
+<ion-content >
+  <ion-slide-box  delegate-handle="image-viewer" on-slide-changed="slideChanged(index)" auto-play="true" does-continue="true">
+    <ion-slide ng-repeat="content in contents">
+      <img ng-src="{{content.imageLink}}" style="width:300px;height:300px;margin:auto;display:block" >
+    </ion-slide>
+  </ion-slide-box>
+</ion-content>
+</ion-view>

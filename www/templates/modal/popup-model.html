@@ -1,0 +1,12 @@
+<ion-view>
+  <div class="modal image-modal image1" on-swipe-down="closeModal()" ng-click="closeModel()" >
+    <ion-content direction="xy"  zooming="true" min-zoom="1" style="width: 100%; height: 100%" overflow-scroll="false">
+      <div class="image" style="background-image: url( {{current_user.imagesLink}} )"></div>
+      <div class="button-bar tool">
+        <a class="button" href="#/tab/groups"><i class="ion-ios-chatboxes-outline" style="font-size:30px;"></i></a>
+        <a class="button"><i class="ion-ios-telephone-outline" style="font-size:30px;"></i></a>
+        <a class="button"><i class="ion-information-circled" style="font-size:30px;"></i></a>
+      </div>
+    </ion-content>
+  </div>
+</ion-view>
